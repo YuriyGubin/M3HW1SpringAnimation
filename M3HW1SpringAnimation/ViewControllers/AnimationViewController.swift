@@ -46,7 +46,7 @@ class AnimationViewController: UIViewController {
         animationLabel.text = "Animation: \(animation.animation)"
         curveLabel.text = "Curve: \(animation.curve)"
         forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
-        durationLabel.text = "Duration: \(String(format: "%.2f",animation.duration))"
+        durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
         delayLabel.text = "Delay: \(animation.delay)"
     }
 }

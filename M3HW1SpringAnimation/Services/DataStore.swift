@@ -9,9 +9,10 @@ class DataStore {
     
     static let shared = DataStore()
     
+    //Tuple include name of animation, min and max value for duration
     let animations = [
-        ("pop", 0.5, 0.8),
-        ("slideLeft", 0.5, 0.8),
+        ("pop", 0.8, 1.2),
+        ("slideLeft", 1.0, 1.6),
         ("slideRight", 0.5, 0.8),
         ("slideDown", 0.5, 0.8),
         ("slideUp", 0.5, 0.8),
