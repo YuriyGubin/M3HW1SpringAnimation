@@ -29,7 +29,7 @@ class AnimationViewController: UIViewController {
     
     @IBAction func runAnimation() {
         
-        springView.animation = animation.animation
+        springView.animation = animation.animationName
         springView.curve = animation.curve
         springView.force = animation.force
         springView.duration = animation.duration
@@ -39,11 +39,11 @@ class AnimationViewController: UIViewController {
     
         setupLabels()
         animation = Animation.getAnimation()
-        runButton.setTitle("Run " + animation.animation, for: .normal)
+        runButton.setTitle("Run " + animation.animationName, for: .normal)
     }
     
     private func setupLabels() {
-        animationLabel.text = "Animation: \(animation.animation)"
+        animationLabel.text = "Animation: \(animation.animationName)"
         curveLabel.text = "Curve: \(animation.curve)"
         forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
         durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
