@@ -9,26 +9,26 @@
 /* Begin PBXBuildFile section */
 		EFC9480C29121C4200D64A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9480B29121C4200D64A90 /* AppDelegate.swift */; };
 		EFC9480E29121C4200D64A90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9480D29121C4200D64A90 /* SceneDelegate.swift */; };
-		EFC9481029121C4200D64A90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9480F29121C4200D64A90 /* ViewController.swift */; };
+		EFC9481029121C4200D64A90 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9480F29121C4200D64A90 /* AnimationViewController.swift */; };
 		EFC9481329121C4200D64A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC9481129121C4200D64A90 /* Main.storyboard */; };
 		EFC9481529121C4400D64A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFC9481429121C4400D64A90 /* Assets.xcassets */; };
 		EFC9481829121C4400D64A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFC9481629121C4400D64A90 /* LaunchScreen.storyboard */; };
 		EFC9482129121C8300D64A90 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = EFC9482029121C8300D64A90 /* SpringAnimation */; };
 		EFC9482529121FD700D64A90 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9482429121FD700D64A90 /* DataStore.swift */; };
-		EFC9482729121FF400D64A90 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9482629121FF400D64A90 /* Animations.swift */; };
+		EFC9482729121FF400D64A90 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9482629121FF400D64A90 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EFC9480829121C4200D64A90 /* M3HW1SpringAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M3HW1SpringAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC9480B29121C4200D64A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFC9480D29121C4200D64A90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFC9480F29121C4200D64A90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFC9480F29121C4200D64A90 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		EFC9481229121C4200D64A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFC9481429121C4400D64A90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFC9481729121C4400D64A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFC9481929121C4400D64A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC9482429121FD700D64A90 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		EFC9482629121FF400D64A90 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		EFC9482629121FF400D64A90 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		EFC9482829121FFA00D64A90 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EFC9482629121FF400D64A90 /* Animations.swift */,
+				EFC9482629121FF400D64A90 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 		EFC9482A2912202000D64A90 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EFC9480F29121C4200D64A90 /* ViewController.swift */,
+				EFC9480F29121C4200D64A90 /* AnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFC9481029121C4200D64A90 /* ViewController.swift in Sources */,
-				EFC9482729121FF400D64A90 /* Animations.swift in Sources */,
+				EFC9481029121C4200D64A90 /* AnimationViewController.swift in Sources */,
+				EFC9482729121FF400D64A90 /* Animation.swift in Sources */,
 				EFC9482529121FD700D64A90 /* DataStore.swift in Sources */,
 				EFC9480C29121C4200D64A90 /* AppDelegate.swift in Sources */,
 				EFC9480E29121C4200D64A90 /* SceneDelegate.swift in Sources */,

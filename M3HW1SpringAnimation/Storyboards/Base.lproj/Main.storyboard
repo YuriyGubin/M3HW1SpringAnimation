@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Animation View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="M3HW1SpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnimationViewController" customModule="M3HW1SpringAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +30,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runAnimation" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1x-A5-5rl"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZC-pZ-LJa" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="75" y="117.66666666666669" width="240" height="192"/>
@@ -96,6 +99,14 @@
                             <constraint firstItem="JZC-pZ-LJa" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.227488" id="jfU-rf-m5p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="WIc-Z6-fkZ" id="EiQ-cF-9nf"/>
+                        <outlet property="curveLabel" destination="Ihy-Rm-3RG" id="iRs-Vx-NHd"/>
+                        <outlet property="delayLabel" destination="hlZ-T9-41l" id="P07-cl-8kn"/>
+                        <outlet property="durationLabel" destination="9Ru-oZ-rHB" id="1AX-Pt-4F7"/>
+                        <outlet property="forceLabel" destination="vcC-GI-4xA" id="WLI-uK-3o2"/>
+                        <outlet property="springView" destination="JZC-pZ-LJa" id="Oij-Dd-Kwx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
