@@ -19,11 +19,14 @@ struct Animation {
         let randomAnimation = Int.random(in: 0..<shared.animations.count)
         let randomCurve = Int.random(in: 0..<shared.curves.count)
         
+        let minDuration = shared.animations[randomAnimation].1
+        let maxDuration = shared.animations[randomAnimation].2
+        
         let animation = Animation(
-            animation: shared.animations[randomAnimation],
+            animation: shared.animations[randomAnimation].0,
             curve: shared.curves[randomCurve],
             force: Double.random(in: 1...1.5),
-            duration: Double.random(in: 0.8...1.5),
+            duration: Double.random(in: minDuration...maxDuration),
             delay: 0.3
         )
         

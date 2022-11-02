@@ -10,7 +10,6 @@ import SpringAnimation
 
 class AnimationViewController: UIViewController {
     
-    
     @IBOutlet var springView: SpringView!
     
     @IBOutlet var animationLabel: UILabel!
@@ -19,8 +18,16 @@ class AnimationViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
+    @IBOutlet var runButton: SpringButton!
+    
+    private var animation = Animation.getAnimation()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupLabels()
+    }
+    
     @IBAction func runAnimation() {
-        let animation = Animation.getAnimation()
         
         springView.animation = animation.animation
         springView.curve = animation.curve
@@ -30,6 +37,12 @@ class AnimationViewController: UIViewController {
         
         springView.animate()
     
+        setupLabels()
+        animation = Animation.getAnimation()
+        runButton.setTitle("Run " + animation.animation, for: .normal)
+    }
+    
+    private func setupLabels() {
         animationLabel.text = "Animation: \(animation.animation)"
         curveLabel.text = "Curve: \(animation.curve)"
         forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"

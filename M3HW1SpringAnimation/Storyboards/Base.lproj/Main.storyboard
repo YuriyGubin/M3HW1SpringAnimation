@@ -105,6 +105,7 @@
                         <outlet property="delayLabel" destination="hlZ-T9-41l" id="P07-cl-8kn"/>
                         <outlet property="durationLabel" destination="9Ru-oZ-rHB" id="1AX-Pt-4F7"/>
                         <outlet property="forceLabel" destination="vcC-GI-4xA" id="WLI-uK-3o2"/>
+                        <outlet property="runButton" destination="yAY-Na-aTS" id="gai-fx-bIf"/>
                         <outlet property="springView" destination="JZC-pZ-LJa" id="Oij-Dd-Kwx"/>
                     </connections>
                 </viewController>
