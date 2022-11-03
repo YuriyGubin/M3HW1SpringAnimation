@@ -17,8 +17,8 @@ struct Animation {
         let shared = DataStore.shared
         
         let animation = Animation(
-            animationName: shared.animations.randomElement() ?? "",
-            curve: shared.curves.randomElement() ?? "",
+            animationName: shared.animations.randomElement()?.rawValue ?? "",
+            curve: shared.curves.randomElement()?.rawValue ?? "",
             force: Double.random(in: 1...2),
             duration: Double.random(in: 0.7...1.2),
             delay: 0.3
