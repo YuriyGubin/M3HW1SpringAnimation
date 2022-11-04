@@ -13,6 +13,16 @@ struct Animation {
     let duration: Double
     let delay: Double
     
+    var description: String {
+        """
+        Animation: \(animationName)
+        Curve: \(curve)
+        Force: \(String(format: "%.2f", force))
+        Duration: \(String(format: "%.2f", duration))
+        Delay: \(delay)
+        """
+    }
+    
     static func getAnimation() -> Animation {
         let shared = DataStore.shared
         
